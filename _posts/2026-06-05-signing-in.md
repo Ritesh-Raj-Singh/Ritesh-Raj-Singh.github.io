@@ -1,10 +1,10 @@
 ---
-title: "Project Name"
+title: "Hello World"
 categories:
  - Project
 tags:
  - C++
- - Machine Learning
+ - Competitive Programming
 ---
 
 trying portofolio
