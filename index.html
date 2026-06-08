@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ritesh Raj Singh | Portfolio</title>
+    <meta name="description" content="Portfolio of Ritesh Raj Singh, Undergrad at IIT Guwahati and Competitive Programmer.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="cursor-glow"></div>
+    <div class="bg-gradient-1"></div>
+    <div class="bg-gradient-2"></div>
+
+    <nav class="glass-nav">
+        <div class="nav-content">
+            <a href="#home" class="logo">RS<span class="dot">.</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content reveal">
+                <p class="greeting">Hi, I'm</p>
+                <h1 class="name">Ritesh Raj Singh</h1>
+                <h2 class="title gradient-text">Undergrad @ IIT Guwahati & Competitive Programmer</h2>
+                <p class="summary">I'm a B.Tech Computer Science and Engineering undergrad at IIT Guwahati, deeply passionate about High-Performance Computing, C++ Concurrency, and Hardware Acceleration.</p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn primary-btn">View My Work <i class="fas fa-arrow-right"></i></a>
+                    <a href="#contact" class="btn secondary-btn">Contact Me</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+            <div class="about-grid">
+                <div class="glass-card education reveal">
+                    <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                    <div class="timeline-item">
+                        <span class="date">2024 - Present</span>
+                        <h4>Indian Institute of Technology Guwahati</h4>
+                        <p>B.Tech in Computer Science and Engineering</p>
+                        <div class="cpi-highlight">
+                            <span class="cpi-badge">Major CPI: 7.54</span>
+                            <span class="cpi-badge">Core CS CPI: 8.64/10</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="glass-card skills reveal" style="transition-delay: 100ms;">
+                    <h3><i class="fas fa-code"></i> Technical Skills</h3>
+                    <div class="skills-category">
+                        <h4>Programming Languages</h4>
+                        <div class="tags">
+                            <span class="tag">C</span>
+                            <span class="tag">C++</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">HTML/CSS</span>
+                        </div>
+                    </div>
+                    <div class="skills-category">
+                        <h4>Technologies & Tools</h4>
+                        <div class="tags">
+                            <span class="tag">Verilog</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">Git</span>
+                            <span class="tag">Gem5</span>
+                            <span class="tag">pandas</span>
+                            <span class="tag">numpy</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card experience reveal" style="transition-delay: 200ms;">
+                    <h3><i class="fas fa-users"></i> Position of Responsibility</h3>
+                    <div class="timeline-item">
+                        <span class="date">April 2026 - Present</span>
+                        <h4>Competitive Programming Head</h4>
+                        <p class="org">Coding Club, IIT Guwahati</p>
+                        <p class="por-desc">Currently serving as the CP Head, where I lead initiatives like 'Headstart'—a beginner-friendly CP course with over 1,000 registrations. I also orchestrate national-level events such as the IIWCPC, featuring live 1v1 Discord brackets for elite Codeforces Masters, and host mock assessments for corporate intern recruitment.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="glass-card project-card reveal">
+                    <div class="project-header">
+                        <h3>ThreadsafeQueueLib</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/Ritesh-Raj-Singh/ThreadsafeQueueLib" target="_blank" title="View Source"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <p class="project-subtitle">High-performance Lock-Free & Wait-Free Queue Library</p>
+                    <p class="project-desc">Developed a high-performance C++ concurrency library featuring wait-free SPSC and lock-free MPSC/MPMC queues. By architecting bounded ring-buffers and chunk-based linked nodes, and carefully managing atomic memory ordering and cache-line alignment, the library effectively eliminates false sharing. It achieved an impressive 121.3M Ops/s (SPSC) and 22.8M Ops/s (MPMC) in benchmarks.</p>
+                    <div class="tags">
+                        <span class="tag">C++</span>
+                        <span class="tag">Concurrency</span>
+                        <span class="tag">Lock-Free</span>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="glass-card project-card reveal" style="transition-delay: 100ms;">
+                    <div class="project-header">
+                        <h3>RISC-V Hardware Accelerator</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/rupesh921/hardware_accelerator" target="_blank" title="View Source"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <p class="project-subtitle">Real-Time Matrix Multiplication</p>
+                    <p class="project-desc">Implemented a 5-stage pipelined 32-bit RISC-V (RV32IMF) processor on an FPGA using Verilog, integrated with a 4x4 Systolic Array via MMIO to accelerate real-time image filtering. I heavily optimized the CPU pipeline using data forwarding and active load-use hazard detection, and built a dynamic branch predictor utilizing a 64-entry BHT and BTB. The accelerator utilizes Ping/Pong double buffering to hide memory latency and streams data over a custom UART protocol.</p>
+                    <div class="tags">
+                        <span class="tag">Verilog</span>
+                        <span class="tag">FPGA</span>
+                        <span class="tag">RISC-V</span>
+                        <span class="tag">C++</span>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="glass-card project-card reveal" style="transition-delay: 200ms;">
+                    <div class="project-header">
+                        <h3>VELORA</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/Ritesh-Raj-Singh/KRITI-Optimization" target="_blank" title="View Source"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <p class="project-subtitle">Full-Stack Fleet Routing & Optimization Engine</p>
+                    <p class="project-desc">Architected a comprehensive Fleet Optimization System designed to automate multi-vehicle dispatching while minimizing costs and transit times under strict spatio-temporal constraints. The system runs on a lightning-fast C++ backend powered by the Crow REST framework, using multithreading to execute advanced routing heuristics (like ALNS and Branch & Cut) concurrently. The project won the Gold Medal at the Kriti 2026 Inter-Hostel Tech Competition.</p>
+                    <div class="tags">
+                        <span class="tag">C++</span>
+                        <span class="tag">Crow REST</span>
+                        <span class="tag">Optimization</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="achievements" class="section">
+            <h2 class="section-title">Global <span class="gradient-text">Achievements</span></h2>
+            
+            <div class="cp-profiles-grid reveal">
+                <!-- Codeforces -->
+                <a href="https://codeforces.com/profile/Tanjiro_Kamado_069" target="_blank" class="glass-card profile-card cf-card">
+                    <div class="profile-header">
+                        <i class="fas fa-chart-line"></i>
+                        <h4>Codeforces</h4>
+                    </div>
+                    <div class="profile-stats">
+                        <span class="rating">2059</span>
+                        <span class="title">Candidate Master</span>
+                    </div>
+                    <p>Secured Global Ranks 30 & 162 out of 20,000+ participants in Div Rounds. Solved 1500+ problems.</p>
+                    <span class="handle">@Tanjiro_Kamado_069</span>
+                </a>
+
+                <!-- Codechef -->
+                <a href="https://www.codechef.com/users/tan0_kamado069" target="_blank" class="glass-card profile-card cc-card">
+                    <div class="profile-header">
+                        <i class="fas fa-star"></i>
+                        <h4>CodeChef</h4>
+                    </div>
+                    <div class="profile-stats">
+                        <span class="rating">2083</span>
+                        <span class="title">5 Star</span>
+                    </div>
+                    <p>Secured an outstanding Global Rank 6 in STARTERS 239A.</p>
+                    <span class="handle">@tan0_kamado069</span>
+                </a>
+
+                <!-- AtCoder -->
+                <a href="https://atcoder.jp/users/TanjiroKamado069" target="_blank" class="glass-card profile-card ac-card">
+                    <div class="profile-header">
+                        <i class="fas fa-medal"></i>
+                        <h4>AtCoder</h4>
+                    </div>
+                    <div class="profile-stats">
+                        <span class="rating">1453</span>
+                        <span class="title">3 Kyu</span>
+                    </div>
+                    <p>Secured Rank 173 in Beginner Contest 459.</p>
+                    <span class="handle">@TanjiroKamado069</span>
+                </a>
+            </div>
+
+            <div class="glass-card achievements-card reveal" style="margin-top: 2rem;">
+                <h3 style="margin-bottom: 1.5rem; color: var(--neon-cyan); font-family: var(--font-heading);"><i class="fas fa-trophy"></i> Accolades & Competitions</h3>
+                <ul class="achievements-list">
+                    <li>
+                        <div class="achievement-icon"><i class="fas fa-trophy"></i></div>
+                        <div class="achievement-text">
+                            <strong>KRITI Optimization Challenge:</strong> Achieved Competitive Programming Rank 4 and brought home the <strong>Gold Medal</strong> in this prestigious inter-hostel tech competition at IITG.
+                        </div>
+                    </li>
+                    <li>
+                        <div class="achievement-icon"><i class="fas fa-award"></i></div>
+                        <div class="achievement-text">
+                            <strong>AMS Derive:</strong> Secured Global Rank 18 among a highly competitive pool of 2,500+ participants in the PRIOR round.
+                        </div>
+                    </li>
+                    <li>
+                        <div class="achievement-icon"><i class="fas fa-award"></i></div>
+                        <div class="achievement-text">
+                            <strong>IICPC CodeFest:</strong> Secured Global Rank 26 in the preliminary rounds against a massive field of 15,000+ competitors.
+                        </div>
+                    </li>
+                    <li>
+                        <div class="achievement-icon"><i class="fas fa-users"></i></div>
+                        <div class="achievement-text">
+                            <strong>ICPC Prelims:</strong> Achieved a Team Rank of 176 out of 2,500+ elite teams competing across India.
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+            <div class="contact-container reveal">
+                <p class="contact-text">I'm currently open to new opportunities, collaborations, and competitive programming discussions. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+                <div class="contact-links">
+                    <a href="mailto:riteshrajsingh04444@gmail.com" class="glass-card contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <span>Personal Email</span>
+                    </a>
+                    <a href="mailto:riteshrs@iitg.ac.in" class="glass-card contact-card">
+                        <i class="fas fa-university"></i>
+                        <span>College Email</span>
+                    </a>
+                    <a href="https://github.com/Ritesh-Raj-Singh" target="_blank" class="glass-card contact-card">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://linkedin.com/in/ritesh-raj-singh-" target="_blank" class="glass-card contact-card">
+                        <i class="fab fa-linkedin-in"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="glass-footer">
+        <p>Designed & Built by Ritesh Raj Singh</p>
+        <p class="footer-subtext">&copy; 2026 All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
